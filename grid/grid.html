@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div class="grid-container">
+        
+        <div class="grid-item">A</div>
+        
+
+        <div class="number">B1</div>
+        <div class="number">B2</div>
+        <div class="number">B3</div>
+        <div class="number">B4</div>
+    </div>
+</body>
+
+<style>
+    /* Grid container for layout */
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 equal columns */
+        gap: 10px;
+        padding: 10px;
+    }
+
+  /* Left red box */
+.grid-item{
+    background-color: red;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    color: white; 
+    text-align: left;  
+    padding-left: 10px;
+}
+
+
+    /* Right blue boxes */
+    .number {
+        grid-template-columns: 90px;
+        background-color: blue;
+        color: white;
+        display: flex;
+       
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 90px;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding: 5px;
+        height: 250px; 
+            width: 250px;
+          
+    }
+</style>
+</html>
